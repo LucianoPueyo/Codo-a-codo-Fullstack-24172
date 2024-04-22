@@ -5,8 +5,4 @@ Drive: https://drive.google.com/drive/folders/1vi56a_BSuB4NYQGTRIBqad1QRA-Ff8Bj
 Lista de reproducción: https://www.youtube.com/playlist?list=PLt-b2TBrGUc_3yqC5f3lGvNfCpBzs1MT1
 Formulario de presentismo: https://forms.gle/Jc6vnZf26mg3CRsW8
 Consultas: https://forms.gle/vESCCsDDkPS47hi27
-Github: - 
-Grupos(Alumnos): https://docs.google.com/spreadsheets/d/1IyKtq7xHIUdhkEmAB21dZG34y9UCgkMA9nMNKIq5Sak/edit?pli=1#gid=0
-Grupos: https://docs.google.com/spreadsheets/d/1MJVonlRDbNelhXjc0BPxgAPPMs9uxXlBEpw6MGceVcA/edit?usp=sharing
-
-Noelia Raquel Cotignola Sin Grupo
+Github: https://github.com/LucianoPueyo/Codo-a-codo-Fullstack-24172
