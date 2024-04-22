@@ -1,0 +1,42 @@
+.contenedor, .contenido {
+    border: 1px solid black;
+}
+
+.contenedor {
+    background-color: blue;
+    width: 500px;
+    height: 500px;
+    
+    overflow: hidden;
+}
+
+.contenido {
+    background-color: red;
+    width: 700px;
+    height: 250px;
+}
+
+article {
+    border: 1px solid black;
+    width: 10px;
+    height: 10px;
+
+    overflow: hidden;
+}
+
+.marco {
+    background-color: blue;
+
+    border: 1px solid black;
+    border-radius: 999px;
+
+    width: 100px;
+    height: 100px;
+
+    overflow: hidden;
+}
+
+img {
+    position: relative;
+    left: -55px;
+}

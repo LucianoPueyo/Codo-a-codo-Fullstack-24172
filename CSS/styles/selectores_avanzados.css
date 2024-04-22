@@ -1,0 +1,61 @@
+/*
+Selectores simples
+
+etiqueta, clase, id, universal
+ej:
+
+p, .contenedor, #Seccion1, *
+
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: gray;
+}
+
+body main {
+    flex: 1;
+    text-align: left;
+}
+
+footer {
+    background-color: #444;
+    color: white;
+}
+
+/* ------------------------------------ */
+
+/* Selectores compuestos */
+
+/* Selector de grupo */
+
+header, footer, main {
+    padding: 25px;
+    text-align: center;
+}
+
+main section p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+main section > p {
+    background-color: red;
+}
+
+h3 + p {
+    background-color: blue;
+}
+
+h3 ~ p {
+    color: red;
+}

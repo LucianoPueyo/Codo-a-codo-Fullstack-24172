@@ -1,0 +1,24 @@
+a {
+
+    display: inline;
+    width: 200px;
+    height: 100px;
+
+    background-color: red;
+}
+
+
+
+p {
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+}
+
+.caja {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+
+    background-color: magenta;
+}

@@ -1,0 +1,25 @@
+* {
+    margin:0;
+    padding:0;
+
+    box-sizing: border-box;
+}
+.contenedor, .contenido {
+    border: 1px solid black;
+}
+
+.contenedor {
+    background-color: blue;
+    width: 500px;
+    height: 500px;
+    
+    /* overflow: hidden; */
+}
+
+.contenido {
+    background-color: red;
+    width: 250px;
+    height: 250px;
+    border: 10px solid black;
+    padding: 10px;
+}

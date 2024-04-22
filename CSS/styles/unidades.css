@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.contenedor {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+}
+
+.contenido {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.a4 {
+    width: 210mm;
+    height: 297mm;
+
+    border: 1px solid black;
+}
+
+.contenedor2 {
+    background-color: blue;
+    width: 1000px;
+    height: 500px;
+}
+
+.contenido2 {
+    background-color: red;
+    width: 50%;
+    height: 250px;
+}
+
+h1 {
+    width: 50%;
+    background-color: chartreuse;
+}
+
+p {
+    font-size: 2em;
+
+    background-color: cadetblue;
+    padding: 3em;
+}
+
+article {
+    font-size: 2rem;
+    background-color: red;
+}
+
+section {
+    background-color: cadetblue;
+
+    /* width: 50vw; */
+    height: 50vh;
+
+    border: 1px solid black;
+}

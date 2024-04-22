@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+    <link rel="stylesheet" href="../styles/posicionamiento.css">
+</head>
+<body>
+    <header id="Encabezado">
+        <h1>Posicionamiento</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#Relative">Relative</a></li>
+            <li><a href="#Seccion3">Seccion 3</a></li>
+            <li>Link 3</li>
+        </ul>
+    </nav>
+    <main>
+        <p>
+            Cuando hablamos de position, si su valor es static decimos que "no está posicionado"<br>
+            Cualquier otro valor, decimos que si está posicionado.
+        </p>
+        <h2>Absolute</h2>
+        <p>
+            Toma como referencia al primer padre posicionado.
+            (si ninguna etiqueta padre está posicionada, toma como referencia el body)
+
+            Para posicionar a voluntad una etiqueta cualquiera sin modificar ningun otro aspecto puedo ponerle position: relative.
+        </p>
+        <section class="contenedor">
+            <article class="contenido">
+                Articulo 1
+            </article>
+        </section>
+        <h2 id="Relative">Relative</h2>
+        <p>
+            Toma como referencia la ubicacion original de la caja.
+        </p>
+        <section class="contenedor-relativo">
+            <article class="contenido-relativo">
+                Articulo 2
+            </article>
+        </section>
+
+        <section id="Seccion4">
+            <h2>Seccion 4</h2>
+        </section>
+        
+        <section id="Seccion3">
+            <article>
+                <h3>Titulo</h3>
+                Articulo 3
+            </article>
+        </section>
+        <h2>Fixed</h2>
+        <a class="button-up" href="#Encabezado">ir al inicio</a>
+
+        
+    </main>
+    <footer>
+        <p>Todos los derechos reservados - 2024</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,8 @@
+i {
+    color: black;
+    transition: 0.2s all;
+}
+
+i:hover {
+    color: red;
+}

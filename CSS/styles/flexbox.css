@@ -1,0 +1,118 @@
+
+header {
+    background-color: gray;
+
+    padding: 5px;
+
+    height: 180px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header h1 {
+    margin: 0;
+}
+
+.contenedor1 {
+    background-color: cadetblue;
+    display: flex;
+
+    width: 500px;
+    /*Eje principal*/
+    flex-direction: row;
+
+    /* Wrap decide si las cajas pueden ir o no hacia abajo cuando su ancho supera al contenedor*/
+    flex-wrap: wrap;
+}
+
+
+.contenedor1 .item1 {
+    background-color: red;
+    width: 200px;
+
+    border: 1px solid black;
+}
+
+
+.contenedor2 {
+    background-color: cadetblue;
+    display: flex;
+
+    width: 500px;
+    height: 300px;
+    /*Eje principal*/
+    flex-direction: row;
+
+    /*Alineamiento en el eje principal*/
+    justify-content: space-evenly;
+
+    /*Alineamiento en el eje secundario*/
+    align-items: center;
+}
+
+.contenedor2 .item2 {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+
+.contenedor3 {
+    background-color: cadetblue;
+    display: flex;
+
+    width: 500px;
+    /*Eje principal*/
+    flex-direction: row;
+}
+
+
+.contenedor3 .item3 {
+    background-color: red;
+    border: 1px solid black;
+
+    flex: 1;
+}
+
+.contenedor3 #ItemGrande{
+    flex: 3;
+}
+
+nav {
+    background-color: brown;
+}
+
+nav ul {
+    display: flex;
+    padding-left: 0;
+
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    list-style-type: none;
+    
+    background-color: chartreuse;
+    border: 1px solid black;
+
+    padding: 5px;
+    width: 100px;
+
+    height: 60px;
+}
+
+.contenedorImagen {
+    width: 100%;
+    height: 500px;
+    background-color: blueviolet;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="../styles/grid.css">
+</head>
+<body>
+    <header id="Inicio">
+        <div id="Logo">
+            <a href="#Inicio">
+                <img src="../src/img/Logo.webp" alt="">
+            </a>
+        </div>
+        <h1>Mi página de productos</h1>
+        <a id="Login" class="button" href="#">login</a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#Inicio" class="button">Inicio</a></li>
+            <li><a href="#Productos" class="button">Productos</a></li>
+            <li><a href="#Contacto" class="button">Contactanos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="Productos">
+            <h2 class="titulo">Productos</h2>
+            <section>
+                <h3 class="subtitulo">Ofertas</h3>
+                <div class="contenedor_ofertas">
+                    <article>
+                        <h4>Oferta 1</h4>
+                        <p>Descripcion Oferta 1</p>
+                    </article>
+                    <article>
+                        <h4>Oferta 2</h4>
+                        <p>Descripcion Oferta 2</p>
+                    </article>
+                    <article>
+                        <h4>Oferta 3</h4>
+                        <p>Descripcion Oferta 3</p>
+                    </article>
+                    <article>
+                        <h4>Oferta 4</h4>
+                        <p>Descripcion Oferta 4</p>
+                    </article>
+                </div>
+            </section>
+            <section>
+                <h3 class="subtitulo">Categorias</h3>
+                <div class="contenedor_categorias">
+                    <article>Tecnología</article>
+                    <article>Hogar</article>
+                    <article>Mascotas</article>
+                    <article>Tecnología 2</article>
+                    <article>Hogar 2</article>
+                    <article>Mascotas 2</article>
+                </div>
+            </section>
+        </section>
+        <section id="Contacto">
+            <h2 class="titulo">Contactanos</h2>
+            <form action="">
+                <label for="Name">Nombre</label>
+                <input id="Name" name="Name" type="text">
+                
+                <label for="Subject">Motivo</label>
+                <input id="Subject" name="Subject" type="text">
+
+                <label for="Message">Consulta</label>
+                <textarea id="Message" name="Message" cols="30" rows="10"></textarea>
+
+                <input class="button" type="reset">
+                <input class="button" type="submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Codo a codo 2024 - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

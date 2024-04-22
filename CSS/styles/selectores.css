@@ -1,0 +1,52 @@
+/* Selector universal */
+* {
+    /*Limpiar estilos por defecto*/
+    margin: 0;
+    padding: 0;
+}
+
+/* Selectores de etiqueta */
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    background-color: red;
+    color: white;
+}
+
+/* selectores de clase */
+.azul {
+    background-color: blue;
+}
+
+.rojo {
+    background-color: red;
+}
+
+/* Selector de id */
+#Parrafo3 {
+    background-color: green;
+}
+
+#Parrafo4 {
+    background-color: green;
+}
+
+p.azul#Parrafo3 {
+    background-color: black;
+}
+
+body p.azul#Parrafo3 {
+    background-color: aquamarine;
+    color: black;
+}
+
+section {
+    background-color: red;
+}
+
+section {
+    background-color: blue;
+}
