@@ -72,23 +72,3 @@ if(hambre) {
         console.log("Se va a dormir");
     }
 }
-
-
-
-
-
-/*
-if (hambre) {
-    console.log("Tiene hambre");
-
-} else {
-    console.log("No tiene hambre");
-}
-
-if(!hambre) {
-    console.log("No tiene hambre");
-
-} else {
-    console.log("Tiene hambre");
-}
-*/
