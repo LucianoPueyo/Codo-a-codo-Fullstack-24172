@@ -48,7 +48,7 @@ APIS:
 
 // https://username.github.io/reponame/file.json
 
-fetch("https://lucianopueyo.github.io/Codo-a-codo-Fullstack-24172/JS/datos.json")
+fetch("https://lucianopueyo.github.io/Codo-a-codo-Fullstack-24172/datos.json")
 .then(response => response.json())
 .then(data => {
     // Procesamiento de la info que llega de la API
