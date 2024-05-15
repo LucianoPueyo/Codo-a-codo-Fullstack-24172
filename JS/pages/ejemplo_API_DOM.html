@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de llamado a API + DOM</title>
+   
+
+    <style>
+        main {
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        article {
+            padding: 25px;
+            background-color: cadetblue;
+
+            border-radius: 25px;
+
+            margin: 10px;
+
+
+            width: 150px;
+            height: 300px;
+        }
+
+        article img {
+             border-radius: 999px;
+             background-color: antiquewhite;
+
+             width: 100%;
+        }
+        .controles {
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+
+            background-color: red;
+            border-radius: 10px;
+            width: 200px;
+            padding: 15px 30px;
+
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .controles button {
+            padding: 10px;
+            flex: 1;
+            margin: 0 5px;
+            transition: .2s all;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .controles button:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de llamado a API + DOM</h1>
+
+    <main>
+        <article id="Persona">
+            <img id="Foto" src="" alt="">
+            <h2><span id="Nombre"></span></h2>
+        </article>
+    </main>
+
+    <div class="controles">
+        <button id="Agregar">Agregar</button>
+        <button id="Quitar">quitar</button>
+    </div>
+
+    <script src="../src/ejemplo_API_DOM.js"></script>
+</body>
+</html>

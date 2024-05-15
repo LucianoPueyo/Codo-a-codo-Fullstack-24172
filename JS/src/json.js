@@ -25,11 +25,6 @@ fetch("https://hp-api.onrender.com/api/characters")
     })
 .catch(error => console.log("Ocurrió un error!"));
 
-
-
-
-
-
 /* fuentes
 Fetch:
 - https://developer.mozilla.org/es/docs/Web/API/Fetch_API/Using_Fetch
@@ -63,3 +58,13 @@ fetch("https://dragonball-api.com/api/characters/1")
     console.log(data);
     })
 .catch(error => console.log("Ocurrió un error!"));
+
+
+fetch("https://randomuser.me/api")
+.then(response => response.json())
+.then(data => {
+    // Procesamiento de la info que llega de la API
+    console.log(data);
+    })
+.catch(error => console.log("Ocurrió un error!"));
+

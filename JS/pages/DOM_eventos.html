@@ -4,16 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM y eventos</title>
+    <style>
+        .activo {
+            background-color: green;
+            padding: 25px;
+            border-radius: 5px;
+            border-top-right-radius: 15px;
+            color: white;
+        }
+
+        #Contenedor {
+            padding: 15px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>DOM y eventos</h1>
+    <header>
+        <h1 id="Titulo">DOM y eventos</h1>
+    </header>
 
-    <article id="Original">
-        <h2>asdas asd</h2>
-        <a href="#">Link 1</a>
-    </article>
+    <main>
+        <section>
+            <p class="secundario">Parrafo 1</p>
+            <p class="importante">Parrafo 2</p>
+            <p class="secundario">Parrafo 3</p>
+            <p class="importante">Parrafo 4</p>
+            <p class="importante">Parrafo 5</p>
+        </section>
+    
+            <p class="importante">Parrafo 6</p>
+            <p class="importante">Parrafo 7</p>
+            
+        <section id="Seccion1">
+            Seccion 1
+        </section>
 
-    <div id="Contenedor"></div>
+        <article id="Original">
+            <h2>Articulo Original</h2>
+            <a href="#">Link 1</a>
+        </article>
+    
+        <div id="Contenedor">
+        </div>
+        <button onclick="AgregarArticulo()">Agregar</button>
+        <button id="BotonQuitar">Quitar</button>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados - 2024</p>
+    </footer>
     <script src="../src/dom_eventos.js"></script>
 </body>
 </html>
