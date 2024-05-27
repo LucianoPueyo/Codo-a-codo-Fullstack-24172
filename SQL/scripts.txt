@@ -37,7 +37,7 @@ CREATE TABLE Inscripcion (
     UNIQUE (alumno_id, curso_id) -- para evitar duplicados de inscripción
 );
 
-----------------------
+--- DML -------------------
 
 -- Insertar datos en la tabla Alumno
 INSERT INTO Alumno (nombre, apellido, dni) VALUES 
@@ -83,3 +83,32 @@ INSERT INTO Inscripcion (alumno_id, curso_id, fecha_inscripcion) VALUES
 (8, 3, '2024-01-17'),
 (9, 3, '2024-01-18'),
 (10, 3, '2024-01-19');
+
+-- Borrar registros
+DELETE FROM Alumno WHERE id = 1;
+
+DELETE FROM Docente WHERE id = 1;
+
+DELETE FROM Curso WHERE id = 1;
+
+DELETE FROM Inscripcion WHERE id = 1;
+
+--------------------------------------------------------
+Consultando todas las inscripciones con el detalle de cada alumno y el curso al cual está inscripto.
+
+SELECT 
+    Inscripcion.id AS inscripcion_id,
+    Alumno.nombre AS alumno_nombre,
+    Alumno.apellido AS alumno_apellido,
+    Alumno.dni AS alumno_dni,
+    Curso.nombre AS curso_nombre,
+    Curso.descripcion AS curso_descripcion,
+    Curso.turno AS curso_turno,
+    Curso.cupos_maximos AS curso_cupos_maximos,
+    Inscripcion.fecha_inscripcion
+FROM 
+    Inscripcion
+JOIN 
+    Alumno ON Inscripcion.alumno_id = Alumno.id
+JOIN 
+    Curso ON Inscripcion.curso_id = Curso.id;
