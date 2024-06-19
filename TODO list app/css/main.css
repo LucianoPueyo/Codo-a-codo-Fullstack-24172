@@ -1,0 +1,225 @@
+:root {
+    --main: #5900FF;
+    --main-midtone: #885bdc;
+    --main-light: #EFE7FF;
+    --secondary: #FFEFBD;
+    --secondary-light: #FFF8E4;
+    --dark: #242424;
+    --dark-light: #2F2F2F;
+
+    --main-padding: 50px;
+    --secondary-padding: 25px;
+    --terciary-padding: 15px;
+    --min-padding: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+header {
+    min-height: 100vh;
+    background-image: url("../resources/img/bg.png");
+    font-weight: normal;
+    font-size: 50px;
+
+    color: var(--dark-light);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-left: var(--main-padding);
+}
+
+main {
+    background-image: url("../resources/img/bg_gradiente_2_25.png");
+    min-height: 100vh;
+
+    padding: var(--main-padding);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    h2 {
+        color: var(--main-light);
+        font-weight: 200;
+    }
+
+    .tareas {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex: 1;
+
+        padding: var(--terciary-padding);
+
+        .tarea {
+
+            display: flex;
+            flex-direction: column;
+
+            justify-content: flex-start;
+
+            width: 300px;
+            height: 400px;
+
+            padding: var(--secondary-padding);
+            margin-right: var(--main-padding);
+
+            background-color: var(--secondary);
+
+            h3 {
+                padding: var(--min-padding);
+            }
+
+            .descripcion {
+                padding: var(--min-padding);
+                line-height: 1.5em;
+
+                flex: 6;
+            }
+
+            .acciones {
+                flex: 1;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+
+                opacity: 0;
+
+                font-size: 30px;
+
+                transition: all 0.2s;
+
+                a {
+                    margin: 0 5px;
+                    color: var(--dark);
+                    transition: all 0.1s;
+                }
+
+                a#Completar {
+                    font-size: 50px;
+                }
+
+                a#Completar:hover {
+                    color: var(--main);
+                }
+
+                a#Editar:hover {
+                    color: var(--main-midtone);
+                }
+
+                a#Archivar:hover {
+                    color: red;
+                }
+            }
+        }
+
+        .tarea:hover .acciones {
+            opacity: 100;
+        }
+
+        .tarea.agregar {
+            background-color: transparent;
+            transition: all 0.2s;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .bxs-message-square-add{
+                color: var(--main);
+                font-size: 75px;
+            }
+        }
+    }
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: var(--main-padding);
+
+    .firma {
+        font-weight: 100;
+        color: var(--main-light);
+        transition: all 0.1s;
+    }
+
+    .firma:hover {
+        color: var(--secondary);
+    }
+
+    .sociales {
+        list-style-type: none;
+        display: flex;
+
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+
+        a {
+            font-size: 30px;
+            color: var(--main-light);
+
+            transition: all 0.1s;
+        }
+
+        a:hover {
+            color: var(--main);
+        }
+    }
+}
+
+.chanfle {
+    /*Una forma de obtener esquinas a 45 grados*/
+    /* https://css-generators.com/custom-corners/ */
+    clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0 100%);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.chanfle-vacio {
+    position: relative;
+    opacity: 0;
+
+    transition: all 0.1s;
+}
+
+.chanfle-vacio:hover{
+    opacity: 100;
+}
+.chanfle-vacio:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, var(--main), var(--main-light));
+    clip-path: polygon(0 0,calc(100% - 50px) 0,100% 50px,100% 100%,0 100%,0 0,2px  2px ,2px calc(100% - 2px),calc(100% - 2px) calc(100% - 2px),calc(100% - 2px) calc(50px + 0.83px),calc(100% - 50px - 0.83px) 2px,2px 2px);
+}
