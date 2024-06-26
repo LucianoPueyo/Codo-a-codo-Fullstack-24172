@@ -1,3 +1,5 @@
+let BASE_URL = 'http://localhost:5000';
+
 let submitButton = document.querySelector("#Formulario #Crear");
 
 let params = new URLSearchParams(document.location.search);
@@ -9,7 +11,7 @@ function add_new_task(event) {
         'descripcion': document.querySelector("#Formulario #Descripcion").value
     }
 
-    let url = 'http://localhost:5000/api/tasks/create/';
+    let url = BASE_URL + '/api/tasks/create/';
 
     fetchData(url, "POST", () => {
         document.querySelector("#Formulario").reset();
@@ -24,7 +26,7 @@ function update_task(event) {
         'descripcion': document.querySelector("#Formulario #Descripcion").value
     }
 
-    let url = 'http://localhost:5000/api/tasks/update/' + task_id;
+    let url = BASE_URL + '/api/tasks/update/' + task_id;
 
     fetchData(url, "PUT", () => {
         document.querySelector("#Formulario").reset();
@@ -47,7 +49,7 @@ function add_or_update(){
 
         set_form_readOnly(true);
 
-        let url = 'http://localhost:5000/api/tasks/fetch/' + task_id;
+        let url = BASE_URL + '/api/tasks/fetch/' + task_id;
         fetchData(url, "GET", (data) => {
             document.querySelector("#Titulo").value = data.nombre;
             document.querySelector("#Descripcion").value = data.descripcion;
@@ -62,8 +64,6 @@ function add_or_update(){
         submitButton.addEventListener("click", add_new_task);
     }
 }
-
-
 
 add_or_update();
 

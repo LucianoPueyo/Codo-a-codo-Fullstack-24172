@@ -1,3 +1,5 @@
+let BASE_URL = 'http://localhost:5000';
+
 // Botones de filtro de tareas
 let filterButtons = {
     "Pendientes": document.querySelector("#VerPendientes"),
@@ -32,7 +34,7 @@ taskArchivedTemplateReference.remove();
 function archiveTask(event) {
     let id = event.currentTarget.task_id;
 
-    let url = 'http://localhost:5000/api/tasks/archive/' + id;
+    let url = BASE_URL + '/api/tasks/archive/' + id;
 
     fetchData(url, "DELETE", () => {
         location.reload();
@@ -47,17 +49,17 @@ function editTask(event) {
 function completeTask(event) {
     let id = event.currentTarget.task_id;
 
-    let url = 'http://localhost:5000/api/tasks/complete/set/' + id;
+    let url = BASE_URL + '/api/tasks/complete/set/' + id;
 
     fetchData(url, "PUT", () => {
-        location.reload();
+        location.reload(); 
     });
 }
 
 function toPendingTask(event){
     let id = event.currentTarget.task_id;
 
-    let url = 'http://localhost:5000/api/tasks/complete/reset/' + id;
+    let url = BASE_URL + '/api/tasks/complete/reset/' + id;
 
     fetchData(url, "PUT", () => {
         location.reload();
@@ -67,17 +69,17 @@ function toPendingTask(event){
 function loadTasks(task_status) {
     let fetch_data = {
         'Pendientes': {
-            'URL': 'http://localhost:5000/api/tasks/pending/',
+            'URL': BASE_URL + '/api/tasks/pending/',
             'TaskTemplatesName': 'Pendiente'
         },
 
         'Completadas': {
-            'URL': 'http://localhost:5000/api/tasks/completed/',
+            'URL': BASE_URL + '/api/tasks/completed/',
             'TaskTemplatesName': 'Completada'
         },
 
         'Archivadas': {
-            'URL': 'http://localhost:5000/api/tasks/archived/',
+            'URL': BASE_URL + '/api/tasks/archived/',
             'TaskTemplatesName': 'Archivada'
         },
     }

@@ -88,7 +88,7 @@ class Task:
         else: # Crear Tarea nueva
             cursor.execute(
                 """
-                    INSERT INTO tasks
+                    INSERT INTO tareas
                     (nombre, descripcion, fecha_creacion, completada, activa)
                     VALUES (%s, %s, %s, %s, %s)
                 """,
